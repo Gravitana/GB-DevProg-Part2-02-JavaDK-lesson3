@@ -5,7 +5,10 @@ import java.util.ArrayList;
 public class Main {
     public static void main(String[] args) {
 
-        System.out.println("----- Calculator -----");
+        System.out.println();
+        System.out.println("----------------------------------------------------------");
+        System.out.println("1. Calculator");
+        System.out.println();
 
         int num1 = 5;
         double num2 = 2.5;
@@ -15,8 +18,10 @@ public class Main {
         System.out.println(num1 + " / " + 0 + " = " + Calculator.divide(num1, 0));
         System.out.println(num1 + " - " + num2 + " = " + Calculator.subtract(num1, num2));
 
+        System.out.println();
         System.out.println("----------------------------------------------------------");
-        System.out.println("----- CompareArrays -----");
+        System.out.println("2. CompareArrays");
+        System.out.println();
 
         ArrayList<Object> array1 = new ArrayList<>();
         array1.add("string");
@@ -36,7 +41,22 @@ public class Main {
             System.out.println("Массивы разные");
         }
 
+        System.out.println();
+        System.out.println("----------------------------------------------------------");
+        System.out.println("3. Pair");
+        System.out.println();
 
+        Pair<Object, Object> pair1 = new Pair<>("abcd", 1);
+        System.out.println("getFirst(): " + pair1.getFirst());
+        System.out.println("getSecond(): " + pair1.getSecond());
+        System.out.println("toString(): " + pair1);
+        System.out.println();
+
+        Pair<Object, Object> pair2 = new Pair<>(2.6, "---qqq---");
+        System.out.println("getFirst(): " + pair2.getFirst());
+        System.out.println("getSecond(): " + pair2.getSecond());
+        System.out.println("toString(): " + pair2);
+        System.out.println();
 
     }
 
