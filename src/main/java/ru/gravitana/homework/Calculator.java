@@ -1,4 +1,4 @@
-package ru.gravitana.calculator;
+package ru.gravitana.homework;
 
 public class Calculator {
     public static <T1 extends Number, T2 extends Number> String sum(T1 t1, T2 t2) {
